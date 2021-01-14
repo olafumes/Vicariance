@@ -24,7 +24,7 @@ Spore_Arrival_A_Sum <- vector(length = 100) #create vector to calculate spore ar
 Spore_Arrival_B_Sum <- vector(length = 100)
 Hyp_Growth_A <- vector(length = 100)# Vector for hypothetical maximal grwoth. Is needed if spore arrival exceeds capacity of locality
 Hyp_Growth_B <- vector(length = 100)
-Hyp_Growth_Total <- vector_length = 100)
+Hyp_Growth_Total <- vector(length = 100)
 library(av)#video library
 library(ggplot2)
 df <- data.frame(species = rep(c("B", "A"), each=100),
