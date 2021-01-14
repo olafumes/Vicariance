@@ -71,7 +71,6 @@ for (m in 1:500){ #as above for graphics production
 		Spore_Arrival_Total <- Spore_Arrival_A_Sum + Spore_Arrival_B_Sum
 		Growth_Rate <- ifelse(Spore_Arrival_Total > 1, 1/Spore_Arrival_Total, 1 + (r * Spore_Arrival_Total - Spore_Arrival_Total * Spore_Arrival_Total * r))
 		Correction_Factor <- (Growth_Rate*Spore_Arrival_Total)/(Spore_Arrival_A_Sum * Selection_Vector_A + Spore_Arrival_B_Sum * Selection_Vector_B)
-		cat("correction factor: ", Correction_Factor, "\n")		
 		Species_A_Distribution <- Spore_Arrival_A_Sum * Growth_Rate
 		Species_B_Distribution <- Spore_Arrival_B_Sum *Growth_Rate
 		propagation_A <- Selection_Vector_A * Species_A_Distribution * Correction_Factor
